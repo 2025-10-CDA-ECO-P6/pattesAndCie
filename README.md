@@ -2,3 +2,6 @@ Lien vers les user stories : https://docs.google.com/document/d/1B7NJKKmL5dOUTNp
 
 
 Lien vers le use case : https://miro.com/app/board/uXjVJp1IiUU=/
+
+
+lien vers le MCD : https://miro.com/app/board/uXjVJp9sY4c=/
