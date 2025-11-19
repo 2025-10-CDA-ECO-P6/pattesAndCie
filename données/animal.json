@@ -1,0 +1,24 @@
+{
+"animaux": [
+    {
+    "id": 1,
+    "nom": "Lili",
+    "espece": "chien",
+    "race": "border collie",
+    "proprioID": 1,
+    "telProprio": "0606060606",
+    "vaccins": [1, 2],
+    "traitements": [1]
+    },
+    {
+    "id": 2,
+    "nom": "Moka",
+    "espece": "chat",
+    "race": "siamois",
+    "proprioID": 2,
+    "telProprio": "0707070707",
+    "vaccins": [3],
+    "traitements": []
+    }
+]
+}

@@ -1,0 +1,18 @@
+{
+"visites": [
+    {
+    "id": 1,
+    "animalID": 1,
+    "date": "2025-01-20T14:00:00",
+    "motif": "contrôle routine",
+    "note": "RAS, animal en bonne santé."
+    },
+    {
+    "id": 2,
+    "animalID": 2,
+    "date": "2025-03-01T09:45:00",
+    "motif": "vaccination",
+    "note": null
+    }
+]
+}

@@ -1,0 +1,12 @@
+{
+"traitements": [
+    {
+    "id": 1,
+    "nom": "vermifuge"
+    },
+    {
+    "id": 2,
+    "nom": "antibiotique"
+    }
+]
+}

@@ -1,0 +1,14 @@
+{
+"proprietaires": [
+    {
+    "id": 1,
+    "nom": "Alice Dupont",
+    "telephone": "0606060606"
+    },
+    {
+    "id": 2,
+    "nom": "Jean Martin",
+    "telephone": "0707070707"
+    }
+]
+}
