@@ -1,8 +1,9 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import AnimalCard from "../components/AnimalCard";
 import animalsData from '../data/animals.json';
 import Link from "next/link";
+import AnimalCard from '@/components/AnimalCard';
+
+
 
 export default function Home() {
   return (

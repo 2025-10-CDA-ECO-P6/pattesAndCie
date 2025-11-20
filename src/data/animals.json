@@ -8,7 +8,8 @@
     "proprioID": 1,
     "telProprio": "0606060606",
     "vaccins": [1, 2],
-    "traitements": [1]
+    "traitements": [1],
+    "image": "/chihuahua-7914095_1280.jpg"
     },
     {
     "id": 2,
@@ -18,7 +19,52 @@
     "proprioID": 2,
     "telProprio": "0707070707",
     "vaccins": [3],
-    "traitements": []
+    "traitements": [],
+    "image": "/sbr4ugehoa171.jpg"
+    },
+    {
+    "id": 3,
+    "nom": "Bella",
+    "espece": "chien",
+    "race": "chihuahua",
+    "proprioID": 3,
+    "telProprio": "0808080808",
+    "vaccins": [1, 4],
+    "traitements": [2, 3],
+    "image": "/chihuahua-7914095_1280.jpg"    
+    },
+    {
+    "id": 4,
+    "nom": "Oscar",
+    "espece": "chat",
+    "race": "maine coon",
+    "proprioID": 4,
+    "telProprio": "0909090909",
+    "vaccins": [2, 3],
+    "traitements": [4],
+    "image": "/sbr4ugehoa171.jpg"
+    },
+    {
+    "id": 5,
+    "nom": "Nina",
+    "espece": "chien",
+    "race": "labrador",
+    "proprioID": 5,
+    "telProprio": "1010101010",
+    "vaccins": [1, 2, 4],
+    "traitements": [],
+    "image": "/chihuahua-7914095_1280.jpg"
+    },
+    {
+    "id": 6,
+    "nom": "Simba",
+    "espece": "chat",
+    "race": "bengal",
+    "proprioID": 6,
+    "telProprio": "1111111111",
+    "vaccins": [3],
+    "traitements": [5],
+    "image": "/sbr4ugehoa171.jpg"
     }
 ]
 }

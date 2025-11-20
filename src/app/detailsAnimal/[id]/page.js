@@ -3,6 +3,7 @@ import ownersData from '@/data/owners.json';
 import vaccinesData from '@/data/vaccins.json';
 import visitsData from '@/data/visits.json';
 import treatmentsData from '@/data/treatments.json';
+import BackButton from "@/components/BackButton";
 
 
 export default async function detailsAnimal({ params }) {
@@ -22,12 +23,14 @@ export default async function detailsAnimal({ params }) {
     <>
         <div>
         <h1>{animal.nom}</h1>
-        <img
-        src="/chihuahua-7914095_1280.jpg" 
-        alt={animal.nom} 
-        width={150} 
-        height={200} 
+
+        <img 
+        src={animal.image}
+        alt={animal.nom}
+        width={200}
+        height={200}
         />
+
         <p><strong>Espèce :</strong> {animal.espece}</p>
         <p><strong>Race :</strong> {animal.race}</p>
 
@@ -46,6 +49,7 @@ export default async function detailsAnimal({ params }) {
         <h2>Traitements</h2>
         <p>{treatment.length > 0 ? treatment.map(t => t.nom).join(", ") : "Aucun traitement"}</p>
         </div>
+        <BackButton />
     </>
     );
 }
