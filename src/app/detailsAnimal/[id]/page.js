@@ -4,6 +4,7 @@ import vaccinesData from '@/data/vaccins.json';
 import visitsData from '@/data/visits.json';
 import treatmentsData from '@/data/treatments.json';
 import BackButton from "@/components/BackButton";
+import styles from './page.module.css';
 
 
 export default async function detailsAnimal({ params }) {
@@ -20,36 +21,50 @@ export default async function detailsAnimal({ params }) {
     }   
 
     return (
-    <>
-        <div>
-        <h1>{animal.nom}</h1>
+        <div className={styles.container}>
+            {/* En-tête */}
+            <div className={styles.header}>
+                <img src={animal.image} alt={animal.nom} />
+                <div className={styles['header-info']}>
+                    <h1>{animal.nom}</h1>
+                    <p><strong>Espèce :</strong> {animal.espece}</p>
+                    <p><strong>Race :</strong> {animal.race}</p>
+                </div>
+            </div>
 
-        <img 
-        src={animal.image}
-        alt={animal.nom}
-        width={200}
-        height={200}
-        />
+            {/* Cartes d’informations */}
+            <div className={styles['cards-container']}>
+                <div className={styles.card}>
+                    <h2>Propriétaire</h2>
+                    <p><strong>Nom :</strong> {owner.nom}</p>
+                    <p><strong>Téléphone :</strong> {animal.telProprio}</p>
+                </div>
 
-        <p><strong>Espèce :</strong> {animal.espece}</p>
-        <p><strong>Race :</strong> {animal.race}</p>
+                <div className={styles.card}>
+                    <h2>Vaccins</h2>
+                    <p>{vaccine.length > 0 ? vaccine.map(v => v.nom).join(", ") : "Aucun vaccin"}</p>
+                </div>
 
-        <h2>Informations propriétaire</h2>
-        <p>{owner.nom}</p>
-        <p><strong>Téléphone :</strong> {animal.telProprio}</p>
+                <div className={styles.card}>
+                    <h2>Traitements</h2>
+                    <p>{treatment.length > 0 ? treatment.map(t => t.nom).join(", ") : "Aucun traitement"}</p>
+                </div>
 
-        <h2>Vaccins</h2>
-        <p>{vaccine.length > 0 ? vaccine.map(v => v.nom).join(", ") : "Aucun vaccin"}</p>
+                <div className={styles.card}>
+                    <h2>Visites</h2>
+                    {visit.length > 0 ? visit.map(v => (
+                        <div key={v.id}>
+                            <p><strong>Date :</strong> {v.date}</p>
+                            <p><strong>Motif :</strong> {v.motif}</p>
+                            <p><strong>Note :</strong> {v.note}</p>
+                        </div>
+                    )) : <p>Aucune visite</p>}
+                </div>
+            </div>
 
-        <h2>Visites</h2>
-        <p>{visit.length > 0 ? visit.map(v => v.date).join(", ") : "Aucune visite"}</p>
-        <p>Motif : {visit.length > 0 ? visit.map(v => v.motif).join(",") : "aucune visite"}</p>
-        <p>Note : {visit.length > 0 ? visit.map(v => v.note).join(",") : "aucune visite"}</p>
-
-        <h2>Traitements</h2>
-        <p>{treatment.length > 0 ? treatment.map(t => t.nom).join(", ") : "Aucun traitement"}</p>
+            <div className={styles['back-button']}>
+                <BackButton />
+            </div>
         </div>
-        <BackButton />
-    </>
     );
 }
