@@ -1,0 +1,16 @@
+{
+"personnel": [
+  {
+    "id": 1,
+    "nom": "Dr. Sophie Lambert",
+    "role": "Veterinaire",
+    "email": "sophie.lambert@patte-et-cie.fr"
+  },
+  {
+    "id": 2,
+    "nom": "Léa Duval",
+    "role": "Assistante vétérinaire",
+    "email": "lea.duval@patte-et-cie.fr"
+  }
+]
+}
