@@ -1,3 +1,5 @@
+// accordion cela sert a ouvrir et fermer les onglets dans la page details animal avec framer-motion pour le petit effet d'animation
+
 "use client";
 
 import { useState } from 'react';

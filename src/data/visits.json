@@ -13,6 +13,69 @@
     "date": "2025-03-01T09:45:00",
     "motif": "vaccination",
     "note": null
+    },
+    {
+    "id": 3,
+    "animalID": 1,
+    "date": "2025-06-15T11:30:00",
+    "motif": "problème digestif",
+    "note": "Prescription d'un traitement pour 7 jours."
+    },
+    {
+    "id": 4,
+    "animalID": 3,
+    "date": "2025-07-10T16:15:00",
+    "motif": "blessure",
+    "note": "Suture effectuée, suivi recommandé."
+    },
+    {
+    "id": 5,
+    "animalID": 2,
+    "date": "2025-09-05T10:00:00",
+    "motif": "contrôle post-vaccination",
+    "note": "Aucun effet secondaire observé."
+    },
+    {
+    "id": 6,
+    "animalID": 4,
+    "date": "2025-11-20T13:30:00",
+    "motif": "examen dentaire",
+    "note": "Nécessite un nettoyage dentaire dans 6 mois."
+    },
+    {
+    "id": 7,
+    "animalID": 3,
+    "date": "2025-12-15T15:00:00",
+    "motif": "contrôle de routine",
+    "note": "Poids stable, bonne condition physique."
+    }, 
+    {
+    "id": 8,
+    "animalID": 5,
+    "date": "2025-12-20T09:00:00",
+    "motif": "vaccination annuelle",
+    "note": "Vaccination effectuée sans complications."
+    },
+    {
+    "id": 9,
+    "animalID": 4,
+    "date": "2025-12-22T11:00:00",
+    "motif": "problème de peau",
+    "note": "Traitement topique prescrit."
+    },
+    {
+    "id": 10,
+    "animalID": 5,
+    "date": "2025-12-24T14:30:00",
+    "motif": "examen pré-chirurgical",
+    "note": "Chirurgie programmée pour le 2026-01-05."
+    },
+    {
+    "id": 11,
+    "animalID": 1,
+    "date": "2026-01-10T10:00:00",
+    "motif": "suivi post-traitement digestif",
+    "note": "Amélioration notable, continuer le régime prescrit."
     }
 ]
 }
